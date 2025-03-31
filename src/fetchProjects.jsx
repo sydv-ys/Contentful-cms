@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const client = createClient({
   space: "x505vtnbcpsz",
   environment: "master",
-  accessToken: "i_WbVB5rznyq-n8z5n2bhc8a-FKKFFOJb1SvEAupbmo",
+  accessToken: import.meta.env.VITE_API_KEY,
 });
 
 export const useFetchProjects = () => {
